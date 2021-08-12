@@ -25,7 +25,7 @@ Process 2.097 msec
 ```
 
 ```
-Camera /dev/video0:640 * 360, 330 FPS
+Camera /dev/video0: 640 * 360, 330 FPS
 capture
 Process 3.983 msec
 from_raw
