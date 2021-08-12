@@ -17,20 +17,27 @@
 ```
 Camera /dev/video0: 1920 * 1080, 50 FPS
 capture
-Process 5.367 msec
+Process 5.379 msec
 from_raw
-Process 0.552 msec
+Process 0.591 msec
 from_vec
-Process 2.097 msec
+Process 1.562 msec
+rgb to gray
+Process 12.432 msec
+otsu binarize
+Process 4.265 msec
 ```
 
 ```
 Camera /dev/video0: 640 * 360, 330 FPS
 capture
-Process 3.983 msec
+Process 1.002 msec
 from_raw
-Process 0.218 msec
+Process 0.130 msec
 from_vec
-Process 0.127 msec
+Process 0.058 msec
+rgb to gray
+Process 0.775 msec
+otsu binarize
+Process 0.194 msec
 ```
-
