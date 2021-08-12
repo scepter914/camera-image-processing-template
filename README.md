@@ -11,7 +11,7 @@
 
 ## Result
 
-- see [Output data](output)
+- see [Output data](data)
 - Benchmark output
 
 ```
