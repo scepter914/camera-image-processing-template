@@ -59,8 +59,10 @@ fn main() {
         })
         .unwrap();
 
+    let mut counter = 0;
+
     // loop (and dispose beginning frame for benchmark)
-    for i in 0..100 {
+    loop {
         let frame = camera.capture().unwrap();
         let rgb_image = image::RgbImage::from_vec(width, height, (&frame[..]).to_vec()).unwrap();
         let gray_image = rgb_to_gray(&rgb_image);
@@ -68,11 +70,13 @@ fn main() {
         let otsu_level = imageproc::contrast::otsu_level(&gray_image);
         let binarized_image = imageproc::contrast::threshold(&gray_image, otsu_level);
 
-        // save images
-        if i == 99 {
+        // save images and break loop
+        if counter > 100 {
             gray_image.save("data/gray_image.png").unwrap();
             binarized_image.save("data/binarized_image.png").unwrap();
+            break;
         }
+        counter += 1;
     }
 
     // Benchmark
