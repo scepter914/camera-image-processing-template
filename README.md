@@ -23,3 +23,14 @@ Process 0.552 msec
 from_vec
 Process 2.097 msec
 ```
+
+```
+Camera /dev/video0:640 * 360, 330 FPS
+capture
+Process 3.983 msec
+from_raw
+Process 0.218 msec
+from_vec
+Process 0.127 msec
+```
+
