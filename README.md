@@ -9,7 +9,10 @@
     - gray image to binarized image calculated by imageproc::contrast::otsu_level and imageproc::contrast::threshold
 - In detail, see src/main.rs
 
-## Benchmark output
+## Result
+
+- see [Output data](output)
+- Benchmark output
 
 ```
 Camera /dev/video0: 1920 * 1080, 50 FPS
