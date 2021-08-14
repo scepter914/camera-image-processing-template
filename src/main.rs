@@ -38,7 +38,7 @@ fn rgb_to_gray(rgb_image: &image::RgbImage) -> image::GrayImage {
             gray_image.put_pixel(i, j, image::Luma(gray_pixel));
         }
     }
-    return gray_image;
+    gray_image
 }
 
 fn main() {
