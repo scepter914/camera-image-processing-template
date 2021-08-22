@@ -106,7 +106,7 @@ fn benchmark(device: &str, camera: rscam::Camera, width: u32, height: u32, fps: 
     let rgb_image_raw = image::RgbImage::from_raw(width, height, (&frame[..]).to_vec()).unwrap();
     bench.print_bench_time();
 
-    println!("save ppm by image");
+    println!("save ppm by directly");
     let bench = Benchmark::set_start_time();
     save_file_by_ppm(rgb_image_raw, "data/from_raw.ppm");
     bench.print_bench_time();
